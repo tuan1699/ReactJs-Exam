@@ -7,7 +7,14 @@ const UserCard = ({ user }) => {
 
       <h3 className="user-name">{user.fullname}</h3>
 
-      <button className="btn-view">VIEW PROFILE</button>
+      <button
+        className="btn-view"
+        onClick={() => {
+          alert(user.fullname);
+        }}
+      >
+        VIEW PROFILE
+      </button>
     </div>
   );
 };
