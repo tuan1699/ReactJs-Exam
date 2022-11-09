@@ -83,6 +83,9 @@ const ListTodo = () => {
   }, [type]);
 
   const addTodo = (todo) => {
+    if (!todo.title || /^\s*$/.test(todo.title)) {
+      return;
+    }
     setTodos((prev) => {
       const newTodos = [...prev, todo];
 
@@ -121,6 +124,10 @@ const ListTodo = () => {
 
     todoEdited.title = title;
     const updateTodos = [...todos];
+
+    if (!todoEdited.title || /^\s*$/.test(todo.title)) {
+      return;
+    }
 
     setTodos(updateTodos);
   };
