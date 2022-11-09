@@ -69,7 +69,7 @@ const ListTodo = () => {
   const [type, setType] = React.useState("All");
 
   React.useEffect(() => {
-    const todoList = JSON.parse(localStorage.getItem("todoList"));
+    const todoList = JSON.parse(localStorage.getItem("todoList")) ?? [];
     let todoFilted;
     if (type === "All") {
       todoFilted = [...todoList];
