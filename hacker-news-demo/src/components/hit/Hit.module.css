@@ -11,13 +11,14 @@
   font-weight: 600;
   word-spacing: 4px;
   letter-spacing: 1px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .info {
   color: rgb(189, 165, 165);
   font-size: 14px;
   font-weight: 200;
+  margin-bottom: 10px;
 }
 
 .readmore {
